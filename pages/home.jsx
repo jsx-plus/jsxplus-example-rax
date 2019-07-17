@@ -37,14 +37,14 @@ export default class extends Component {
       height: 150,
     };
     return (
-      <View className="page-home">
+      <View x-class={{ 'page-home': true }}>
         <Header>
           <Image source={source} className="home-logo" />
           <Text x-memo className="home-title" onClick={this.handleClick}>Welcome to {name}</Text>
         </Header>
 
         <Fragment>Using fragment tag.</Fragment>
-        
+
         <WaterFall>
           <View x-slot:header>This is header slot content.</View>
           <View x-slot:item="props">This is item slot content. {JSON.stringify(props)}</View>
