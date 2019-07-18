@@ -21,6 +21,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "babel-plugin-transform-jsx-class": "^0.1.0",
+    "babel-plugin-transform-jsx-condition": "^0.1.0",
     "babel-plugin-transform-jsx-fragment": "^0.1.0",
     "babel-plugin-transform-jsx-list": "^0.1.0",
     "babel-plugin-transform-jsx-memo": "^0.1.0",
