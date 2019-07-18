@@ -17,7 +17,8 @@ export default class extends Component {
   };
 
   state = {
-    name: 'Rax'
+    name: 'Rax',
+    count: 0,
   };
 
   handleClick = (event) => {
@@ -30,11 +31,16 @@ export default class extends Component {
     // You can access app from page's props.
     console.log('App:', this.props.app);
 
-    const { name } = this.state;
+    const { name, count } = this.state;
     const source = {
       uri: logo,
       width: 150,
       height: 150,
+    };
+    const obj = {
+      foo: 'bar',
+      a: 1,
+      b:2
     };
     return (
       <View x-class={{ 'page-home': true }}>
@@ -42,6 +48,15 @@ export default class extends Component {
           <Image source={source} className="home-logo" />
           <Text x-memo className="home-title" onClick={this.handleClick}>Welcome to {name}</Text>
         </Header>
+
+        <View x-for={(item, key) in obj}>key: {key}, item: {item}</View>
+
+        <View x-if={count % 4 === 0}>count: {count}, count % 4 = 0</View>
+        <View x-elseif={count % 4 === 1}>count: {count}, count % 4 = 1</View>
+        <View x-elseif={count % 4 === 2}>count: {count}, count % 4 = 2</View>
+        <View x-else>count: {count}, count % 4 = 3</View>
+
+        <View onClick={() => this.setState((state) => state.count++)}>增加计数</View>
 
         <Fragment>Using fragment tag.</Fragment>
 

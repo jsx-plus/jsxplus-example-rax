@@ -22,6 +22,7 @@
     "babel-eslint": "^10.0.1",
     "babel-plugin-transform-jsx-class": "^0.1.0",
     "babel-plugin-transform-jsx-fragment": "^0.1.0",
+    "babel-plugin-transform-jsx-list": "^0.1.0",
     "babel-plugin-transform-jsx-memo": "^0.1.0",
     "babel-plugin-transform-jsx-slot": "^0.1.0",
     "eslint": "^5.15.1",

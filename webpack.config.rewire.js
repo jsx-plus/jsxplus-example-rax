@@ -5,6 +5,7 @@ function processConfig(config) {
   plugins.push(require('babel-plugin-transform-jsx-slot'));
   plugins.push(require('babel-plugin-transform-jsx-fragment'));
   plugins.push(require('babel-plugin-transform-jsx-class'));
+  plugins.push(require('babel-plugin-transform-jsx-list'));
 
   return config;
 }
