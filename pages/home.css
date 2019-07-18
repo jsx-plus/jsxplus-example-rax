@@ -1,5 +1,6 @@
 .page-home {
   flex-direction: column;
+  background: #eee;
 }
 
 .home-intro {
