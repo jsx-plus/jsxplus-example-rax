@@ -1,5 +1,7 @@
 # UniversalApp Starter Kit
 
+![JSX+](https://img.shields.io/badge/JSX+-available-brightgreen.svg)
+
 ## Getting Started
 
 ### `npm run start`
